@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-3/4 mx-auto p-4">
+<header>    
+<h1 class = "text-center font-semibold text-4xl  bg-green-500 rounded-2xl p-3 w-3/4 mx-auto">Discount Calculator</h1>
+</header>
+<!-- Discount Calculator -->
+<section class="mt-6 mx-auto">
+    
+        <div class="flex justify-center gap-16 p-4 mx-auto  ">
+            <div class="space-y-4">
+                <h2>Mens Jacket</h2>
+                <div class="">
+                    <img src="Images/1.jpg" alt="" class=" h-72 rounded-xl text-center">
+                </div>
+               
+                <h2 class="">Price <span id="jacket-price1">1000</span> Taka</h2>
+                <h3>For 30% Discount</h3> <button class="bg-green-500 text-sm text-white hover:bg-yellow-300 hover:text-black  px-3 py-1 rounded-2xl" id="apply-btn1">Apply Here</button>
+            </div>
+            <div class="space-y-4">
+                <h2>Mens Jacket</h2>
+                <div class="">
+                    <img src="Images/1.jpg" alt="" class=" h-72 rounded-xl">
+                </div>
+               
+                <h2>Price <span id="jacket-price2" >1000</span> Taka</h2>
+                <h3>For 30% Discount</h3> 
+                <h1>Enter Coupon</h1>
+                <input id="coupon-id" type="text" class=" border rounded-xl border-green-500">
+                <button class="bg-green-500 text-sm text-white hover:bg-yellow-300 hover:text-black  px-3 py-1 rounded-2xl" id="apply-btn2">Apply Here</button>
+            </div>
+        </div>
+</section>
+
+<!-- Final Calculation -->
+<section class="mt-4">
+    <div class="  flex justify-around  mx-auto">
+
+        <div><h1 class="text-3xl">Please Pay $<span id="jacket-1">00</span></h1></div>
+        <div><h1 class = "text-3xl">Please Pay $<span id="jacket-2">00</span></h1></div>
+        
+    </div>
+    
+
+</section>
+<script src="JS/javascript.js"></script>
+</body>
+</html>
